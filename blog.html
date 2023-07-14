@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career-Forge Blog</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/59a5ac1eda.js" crossorigin="anonymous"></script>
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <style>
+        /* #more {display: none;}
+        .text-overflow {
+        width:250px;
+        height:120px;
+        display:block; 
+        overflow:hidden;
+        word-break: break-word;
+        word-wrap: break-word;
+        }
+
+        .btn-overflow {
+        display: none;
+        text-decoration: none; 
+        } */
+    </style>
+</head>
+<body>
+    <nav class="sticky-top">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <div id="menuIcon">
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+          </div>
+        </label>
+        <div class="nav-logo"><label class="logo"><a href="/index.html">Career Forge</a></label></div>
+        <ul class="nav-lists">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Job</a></li>
+            <li><a href="post_job.html">Post A Job</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a class="account2" href="/accounts.html">Account</a></li>
+        </ul>
+        <div class="account-sel">
+            <a href="/accounts.html">Account</a>
+        </div>
+        <div class="dropdown-out">
+                    <div class="dropdown">
+            <a data-bs-toggle="dropdown">
+                <i class="bi bi-bell-fill"></i>
+            </a>
+            <ul class="dropdown-menu .dropdown-menu-end">
+                <li><a class="dropdown-item inbox-note" href="/message.html"><div>Inbox</div><div class="inbox-num">3</div></a></li>
+            </ul>
+            <div class="dot"></div>
+        </div>
+        </div>
+        <!-- <div class="dropdown">
+            <a data-bs-toggle="dropdown">
+                <img width="30" height="30" class="rounded rounded-circle" src="/assets/image/avartar.png" alt="">
+            </a>
+            <ul class="dropdown-menu .dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">Messages</a></li>
+              <li><a class="dropdown-item" href="#">Profile Update</a></li>
+              <li><a class="dropdown-item" href="#">Log Out</a></li>
+            </ul>
+        </div> -->
+    </nav>
+
+    <!-- <style>
+        #more {display: none;}
+    </style> -->
+    <section id="blog-page">
+        <div class="blogger">
+            <div class="container text-center">
+                <h3>Browse All Blogs</h3>
+            </div>
+        </div>
+        <div class="blogs-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="blog-img">
+                            <img src="/assets/image/banner.jpeg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <span>20 July</span>
+                            </div>
+                            <div class="blog-title">
+                                <h4>All About My Job Portal Website Built With Frontend Technologies</h4>
+                                <div class="blog-admin d-flex">
+                                    <p class="me-3"><i class="fa-solid fa-user me-1"></i> Admin</p>
+                                    <p><i class="fa-sharp fa-solid fa-tags me-1"></i> Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam fugit aperiam culpa, doloribus esse dolorem doloremque delectus fuga quae quas praesentium sint reiciendis explicabo libero nobis, facilis enim a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dolorem cupiditate obcaecati officia eos. Porro maxime ut quidem est adipisci!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia expedita ab minus, consequatur velit.
+                        </p>
+                        <hr>
+                        <div class="blog-img">
+                            <img src="/assets/image/banner.jpeg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <span>20 July</span>
+                            </div>
+                            <div class="blog-title">
+                                <h4>All About My Job Portal Website Built With Frontend Technologies</h4>
+                                <div class="blog-admin d-flex">
+                                    <p class="me-3"><i class="fa-solid fa-user me-1"></i> Admin</p>
+                                    <p><i class="fa-sharp fa-solid fa-tags me-1"></i> Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam fugit aperiam culpa, doloribus esse dolorem doloremque delectus fuga quae quas praesentium sint reiciendis explicabo libero nobis, facilis enim a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dolorem cupiditate obcaecati officia eos. Porro maxime ut quidem est adipisci!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia expedita ab minus, consequatur velit.
+                        </p>
+                        <hr>
+                        <div class="blog-img">
+                            <img src="/assets/image/banner.jpeg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <span>20 July</span>
+                            </div>
+                            <div class="blog-title">
+                                <h4>All About My Job Portal Website Built With Frontend Technologies</h4>
+                                <div class="blog-admin d-flex">
+                                    <p class="me-3"><i class="fa-solid fa-user me-1"></i> Admin</p>
+                                    <p><i class="fa-sharp fa-solid fa-tags me-1"></i> Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam fugit aperiam culpa, doloribus esse dolorem doloremque delectus fuga quae quas praesentium sint reiciendis explicabo libero nobis, facilis enim a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dolorem cupiditate obcaecati officia eos. Porro maxime ut quidem est adipisci!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia expedita ab minus, consequatur velit.
+                        </p>
+                        <hr>
+                        <br>
+                        <ul class="pagination">
+                            <li><a class="move" href="#">Prev</a></li>
+                            <li><a class="act" href="#">1</a></li>
+                            <li><a class="" href="#">2</a></li>
+                            <li><a class="" href="#">3</a></li>
+                            <li><a class="move" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pe-5">
+                        <button class="accordion accordion-head">Browse Blog By Categories</button>
+                        <div class="panel">
+                            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Categories Search.." title="Type in a category" class="mb-1">
+                            <ul id="myMenu">
+                            <li><a href="search.html">Design, Arts & Multimedia</a></li>
+                            <li><a href="#">Programming & Tech</a></li>
+                            <li><a href="#">Accounting & Finance</a></li>
+                            <li><a href="#">Restaurant / Food Service</a></li>
+                            <li><a href="#">Data Science & Analytics</a></li>
+                            <li><a href="#">Sales / Marketing</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">SQL</a></li>
+                            <li><a href="#">Bootstrap</a></li>
+                            <li><a href="#">Node.js</a></li>
+                            </ul>
+                        </div>
+                        <div class="profile4-page mb-3">
+                            <a href="profile_dashboard.html"><p><i class="fa-sharp fa-solid fa-palette me-2 icon1"></i> Dashboard</p></a>
+                            <a href="/employee_dashboard.html"><p><i class="fa-sharp fa-solid fa-user me-2 icon1"></i> My Profile</p></a>
+                            <a href="/my_profile_employee.html"><p><i class="fa-sharp fa-solid fa-user-gear me-2 icon1"></i>Profile Setting</p></a>
+                            <a href="message.html"><p><i class="fa-sharp fa-solid fa-message me-2 icon1"></i> Messages</p></a>
+                            <a href="/forget_password.html"><p><i class="fa-sharp fa-solid fa-lock me-2 icon1"></i> Change Password</p></a>
+                            <a href="/sign-in.html"><p><i class="fa-sharp fa-solid fa-power-off me-2 icon1"></i> LogOut</p></a>
+                        </div>
+    
+                        <!-- <h4>Comments</h4>
+                        <hr>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <textarea class="form-control" rows="4" id="text6" name="blog_comment" required oninvalid="this.setCustomValidity('This field cannot be left blank.')" 
+                            onchange="this.setCustomValidity('')"></textarea>
+                            <button type="submit" class="mb-5">Post</button>
+                        </form>
+                        <h5>Recent Comments</h5>
+                        <div class="comments-box">
+                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                <h6><a href="#">Lorem ipsum dolor sit amet.</a></h6>
+                                <h4>23 minutes ago</h4>
+                                <hr>
+                        </div>                       -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-about">
+                        <h2>Career Forge</h2>
+                        <p><span>Career Forge</span> is a modern job board designed to connect people looking for a job with work hunting employers. It is crafted with thorough understanding of the business to connect employers and candidates. It is suitable for you to showcase a job that requires advanced professional freelancers. Career Forge is an excellent platform perfect for recruiters and job offices.</p>
+                </div>
+                <div class="footer-inner">
+                    <div class="linked">
+                        <h4>Main Links</h4>
+                        <h6><a href="/about.html"><i class="bi bi-chevron-double-right me-1"></i> About Career Forge</a></h6>
+                        <h6><a href="/blog.html"><i class="bi bi-chevron-double-right me-1"></i> Blog</a></h6>
+                        <h6><a href=""><i class="bi bi-chevron-double-right me-1"></i> Terms & Conditions</a></h6>
+                        <h6><a href=""><i class="bi bi-chevron-double-right me-1"></i> Customer Support</a></h6>
+                        <h6><a href=""><i class="bi bi-chevron-double-right me-1"></i> Frequently Asked Question</a></h6>
+                        <h6><a href="/contact.html"><i class="bi bi-chevron-double-right me-1"></i> Contact Us</a></h6>
+                    </div>
+                    <div class="linked footer-sec">
+                        <h4>Contact Info</h4>
+                        <h6><i class="bi bi-geo-alt-fill me-1 i2"></i> 4257 Street, SunnyVale, USA</h6>
+                        <h6><a href="tel:+234903449570" target="_blank"><i class="bi bi-phone-fill me-1 i2"></i> 090-3449-3570</a></h6>
+                        <h6><a href="mailto:promcode01@gmail.com" target="_blank"><i class="bi bi-envelope-fill me-1 i2"></i> info@careerforge.com</a></h6>
+                        <h6><a href="https://findmaxwell.netlify.app" target="_blank"><i class="fa-sharp fa-solid fa-earth-americas me-1 i2"></i> careerforge.com</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer2">
+        <h4>FIND US ON</h4>
+        <div class="social-handle my-4">
+            <a href="https://twitter.com/pro_mcode" target="_blank"><img class="mx-2" src="/assets/image/twitter.png" alt=""></a>
+            <a href="https://linkedin.com/in/pro-mcode" target="_blank"><img class="mx-2" src="/assets/image/linkedin.png" alt=""></a>
+            <a href="https://instagram.com/pro_mcode" target="_blank"><img class="mx-2" src="/assets/image/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100077339888353" target="_blank"><img class="mx-2" src="/assets/image/facebook.png" alt=""></a>
+        </div>
+        <h6>Copyright © 2023 Career-Forge All Rights Reserved</h6>
+        <h6>Developer: Maxwell (Pro_mcode) </h6>
+    </div>
+    <div class="back-top">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-chevron-double-up"></i></button>
+    </div>
+    <!-- main js -->
+    <script src="/assets/js/main.js"></script>
+
+</body>
+</html>
