@@ -28,9 +28,10 @@ body button{
     transition: all .5s ease;
 }
 nav{
-    /* background:  var(--light-color); */
-    background-color: #0072b1 !important;
-    height: 80px;
+    background:  var(--light-color);
+    /* background-color: #0072b1 !important; */
+    max-height: fit-content;
+    padding: 35px !important;
     width: 100%;
     position: relative;
     display: flex;
@@ -2806,7 +2807,6 @@ input[value^="https://www.linkedin.com/"] {
      color: var(--light-color);
      transform: translate(-50%, -50%);
  }
- 
 /* footer styling */
 footer{
     padding: 60px 12px;
@@ -3011,8 +3011,6 @@ footer h6 .i2{
 }
 @media only screen and (max-width: 850px){
     nav{
-        background:  var(--light-color);
-        height: 80px;
         width: 100%;
         position: relative;
         display: flex;
