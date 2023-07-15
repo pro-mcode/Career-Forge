@@ -692,8 +692,15 @@ nav .nav-lists li a:hover{
     background-size: 100% !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
     background-size: cover !important;
+    /* padding: 60px 12px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)), url(/assets/image/banner2.jpeg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed !important;
+    color: var(--light-color); */
 }
 #intro h1{
     font-size: 50px;
@@ -744,13 +751,6 @@ form .form .form-cont{
     width: 300px;
     border: 1px solid var(--extra-color);
 } 
-@media only screen and (max-width: 350px) {
-    form .form .form-cont{
-        padding: 7px;
-        width: 250px;
-    } 
-    
-}
 form .form .form-cont:focus{
     border: 1px solid var(--secondary-color);
     /* box-shadow: none; */
@@ -2832,6 +2832,7 @@ footer{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed !important;
     color: var(--light-color);
 }
 footer .footer-main {
@@ -2860,9 +2861,6 @@ footer h4,h2{
 }
 footer h4{
     font-size: 18px;
-}
-footer p{
-    font-size: 14px;
 }
 footer .footer-about p{
     font-size: 16px;
@@ -3371,6 +3369,12 @@ footer h6 .i2{
         position: absolute;
         left: 85%;
     }
+    footer .footer-about p{
+        font-size: 14px;
+    }
+    #message-page .chat-header-2 .video_cam {
+        display: none;
+    }
 }
 @media only screen and (max-width: 530px){
     #message-page .chat {
@@ -3538,6 +3542,10 @@ footer h6 .i2{
     }
 }
 @media only screen and (max-width: 350px){
+    form .form .form-cont{
+        padding: 7px;
+        width: 250px;
+    } 
     #pricing .card {
         background: var(--light-color);
         color: var(--dark-color);
