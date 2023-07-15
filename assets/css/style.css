@@ -27,22 +27,6 @@ body a{
 body button{
     transition: all .5s ease;
 }
-.back-top i{
-    position: fixed;
-    top: 72%;
-    left: 75%;
-    font-size: 18px;
-    font-weight: 900;
-    padding: 15px;
-    padding-top: 10px;
-    width: 50px;
-    box-shadow: .6px .6px .8px var(--dark-color);
-    border-radius: 50%;
-    z-index: 100;
-    background-color: var(--extra-color);
-    color: var(--light-color);
-    transform: translate(-50%, -50%);
-}
 nav{
     background:  var(--light-color);
     height: 80px;
@@ -2791,6 +2775,26 @@ input[value^="https://www.linkedin.com/"] {
     display: none;
     cursor: pointer;
 }
+.back-top button{
+    display: none;
+ }
+ .back-top i{
+     position: fixed;
+     top: 72%;
+     left: 90%;
+     font-size: 18px;
+     font-weight: 900;
+     padding: 15px;
+     padding-top: 10px;
+     width: 50px;
+     box-shadow: .6px .6px .8px var(--dark-color);
+     border-radius: 50%;
+     z-index: 100;
+     background-color: var(--extra-color);
+     color: var(--light-color);
+     transform: translate(-50%, -50%);
+ }
+ 
 /* footer styling */
 footer{
     padding: 60px 12px;
@@ -2816,7 +2820,7 @@ footer .footer-inner {
     justify-content: space-between;
 }
 footer h6{
-    font-size: 12px;
+    font-size: 14px;
     color: var(--main-color);
 }
 footer h2{
