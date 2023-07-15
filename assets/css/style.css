@@ -295,6 +295,7 @@ nav .nav-lists li a:hover{
     background-color: var(--main-color);
     padding:55px 2px;
     transition: all .5s ease;
+    background-size: 100%;
 }
 #categories .card h5{
     font-size: 16px;
@@ -688,11 +689,11 @@ nav .nav-lists li a:hover{
     align-items: center;
     text-align: center;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url(/assets/image/intro.jpeg);
-    background-size: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
 }
 #intro h1{
     font-size: 50px;
@@ -1029,7 +1030,7 @@ form .form button:hover {
 /* applicant page styling */
 #applicant-page{
     background-color: rgba(176, 196, 222, .2);
-    padding: 70px 0;
+    padding: 50px 0;
 }
 #applicant-page .applicant-info{
     display: flex;
@@ -1316,11 +1317,16 @@ form .form button:hover {
     cursor: pointer;
 }
 #postjob-page .file-label{
+    display: flex;
+    align-items: center;
+    justify-content: start;
     cursor: pointer;
     padding: 8px 10px;
     border-radius: 6px;
     color: rgba(0, 0, 0, .5);
     border: thin solid rgba(0, 0, 0, .2);
+    border: none;
+    width: 100% !important;
 }
 #postjob-page .file-label i{
     color: var(--secondary-color);
@@ -1605,6 +1611,12 @@ input[value^="https://www.linkedin.com/"] {
     /* width: 100%; */
     justify-content: space-between;
 }
+#message-page .card-header .input-group-text{
+    height: 35px;
+}
+#message-page .card-header .input-group .search{
+    height: 35px;
+}
 #message-page .chat .chat-header {
     display: flex;
     /* align-items: baseline; */
@@ -1660,8 +1672,8 @@ input[value^="https://www.linkedin.com/"] {
 }
 #message-page .chat .chat-header-2{
     display: flex;
-    align-items: baseline;
-    justify-content: center;
+    align-items:  baseline;
+    /* justify-content: center; */
 }
 #message-page .chat .chat-header-2 .video_cam{
     color: white;
@@ -2405,10 +2417,13 @@ input[value^="https://www.linkedin.com/"] {
     font-size: 18px;
     color: var(--extra-color);
 }
+#profile_dashboard .profile_dashboards-info .skills-info .skills-item .action-icon{
+    padding: auto;
+}
 #profile_dashboard .profile_dashboards-info .skills-info .skills-item .edit-icon{
     background: #4cd137; 
     padding: 6px;  
-    font-size: 14px;
+    font-size: 10px;
     border-radius: 50%;
     color: var(--light-color);
 }
@@ -2419,7 +2434,7 @@ input[value^="https://www.linkedin.com/"] {
 #profile_dashboard .profile_dashboards-info .skills-info .skills-item .delete-icon{
     background: #f44336; 
     padding: 6px;  
-    font-size: 14px;
+    font-size: 10px;
     border-radius: 50%;
     color: var(--light-color);
 }
@@ -2849,6 +2864,9 @@ footer h4{
 footer p{
     font-size: 14px;
 }
+footer .footer-about p{
+    font-size: 16px;
+}
 footer p span{
     font-weight: 800;
     font-size: 15px;
@@ -2857,6 +2875,10 @@ footer h6 a{
     text-decoration: none;
     color: var(--main-color);
     transition: all .5s ease;
+    font-size: 16px;
+}
+footer h6{
+    font-size: 16px;
 }
 footer h6 a:hover{
     color: var(--light-color);
@@ -2876,6 +2898,12 @@ footer h6 .i2{
 }
 .footer2 .social-handle img{
     width: 35px;
+}
+.footer2 h4{
+    font-size: 18px;
+}
+.footer2 h6{
+    font-size: 14px;
 }
 /* ul.breadcrumb {
     padding: 10px 16px;
@@ -2903,6 +2931,15 @@ footer h6 .i2{
     color: #01447e;
     text-decoration: underline;
   } */
+@media only screen and (max-width: 1420px) {
+    footer h6 a{
+        font-size: 15px;
+    }
+    footer h6{
+        font-size: 15px;
+    }
+    
+}
 @media only screen and (max-width: 1300px){
     #howitwork .card{
         text-align: center;
@@ -2923,6 +2960,22 @@ footer h6 .i2{
         align-items: center;
         /* border: 1px solid red; */
     }
+    footer .footer-main {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-about {
+        display: block;
+        width: 100%;
+    }
+    footer .footer-inner {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
 }
 @media only screen and (max-width: 1100px){
     #howitwork .card{
@@ -2943,21 +2996,6 @@ footer h6 .i2{
     }
     nav .dropdown{
         left: 92%;
-    }
-    footer .footer-main {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-    footer .footer-about {
-        display: block;
-        width: 100%;
-    }
-    footer .footer-inner {
-        display: flex;
-        width: 60%;
-        justify-content: space-between;
-        align-items: baseline;
     }
     #message-page .chat {
         margin: auto;
@@ -2995,6 +3033,13 @@ footer h6 .i2{
     form .form {
         flex-direction: column;
     }
+    footer .footer-inner {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
 }
 @media only screen and (max-width: 992px){
     #accounts .intermediate-card{
@@ -3134,6 +3179,38 @@ footer h6 .i2{
     }
 }
 @media only screen and (max-width: 768px){  
+    #categories .acct-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/acct-img.jpeg);
+    }
+    #categories .design-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/design-img.jpeg);
+    }
+    #categories .restur-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/restur-img.jpeg);
+    }
+    #categories .progmm-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/progmm-img.jpeg);
+    }
+    #categories .data-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/data-img.png);
+    }
+    #categories .writing-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/writting-img.jpeg);
+    }
+    #categories .educ-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/educ-img.jpeg);
+    }
+    #categories .sales-img{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(/assets/image/sales-img.png);
+    }
+    #categories .card:hover{
+        background-color: var(--main-color) !important;
+    }
+
+    #categories .card i{
+        color: var(--light-color);
+    }
+
     #profile_dashboard  img{
         width: 100px;
         height: 100px;
@@ -3208,10 +3285,13 @@ footer h6 .i2{
         justify-content: space-between;
     }
     footer .footer-inner .linked h6 a {
-        font-size: 10px !important;
+        font-size: 14px;
+    }
+    footer .footer-inner .linked h6 {
+        font-size: 14px;
     }
     footer .footer-inner .linked h4 {
-        font-size: 16px !important;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 680px) {
@@ -3227,17 +3307,6 @@ footer h6 .i2{
     #about-page .abouts-info .com-content {
         width: 100%;
         margin-right: 10px;
-    }
-    footer .footer-inner {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    footer .footer-inner .linked h6 a {
-        font-size: 10px !important;
-    }
-    footer .footer-inner .linked h4 {
-        font-size: 16px !important;
     }
 }
 @media only screen and (max-width: 630px) {
@@ -3351,6 +3420,22 @@ footer h6 .i2{
     }
 
 }
+@media only screen and (max-width: 500px){
+    footer .footer-inner {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    footer .footer-inner .linked h6 a {
+        font-size: 12px;
+    }
+    footer .footer-inner .linked h6 {
+        font-size: 12px;
+    }
+    footer .footer-inner .linked h4 {
+        font-size: 16px;
+    }
+}
 @media only screen and (max-width: 450px){
     #profile_dashboard img{
         left: 20%;
@@ -3369,16 +3454,36 @@ footer h6 .i2{
         width: 250px;
     }
 }
+@media only screen and (max-width: 410px){
+    footer .footer-inner {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    footer .footer-inner .linked h6 a {
+        font-size: 11px;
+    }
+    footer .footer-inner .linked h6 {
+        font-size: 11px;
+    }
+    footer .footer-inner .linked h4 {
+        font-size: 16px;
+    }
+
+}
 @media only screen and (max-width: 380px) {
     footer .footer-inner {
         display: grid;
         width: 100%;
     }
     footer .footer-inner .linked h6 a {
-        font-size: 12px !important;
+        font-size: 14px;
+    }
+    footer .footer-inner .linked h6 {
+        font-size: 14px;
     }
     footer .footer-inner .linked h4 {
-        font-size: 18px !important;
+        font-size: 18px;
     }
     footer .footer-inner .footer-sec{
         margin-top: 10px;
