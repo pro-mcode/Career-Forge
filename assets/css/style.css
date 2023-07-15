@@ -691,16 +691,9 @@ nav .nav-lists li a:hover{
     background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url(/assets/image/intro.jpeg);
     background-size: 100% !important;
     background-position: center center !important;
+    background-attachment: fixed !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    /* padding: 60px 12px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)), url(/assets/image/banner2.jpeg);
-    background-size: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed !important;
-    color: var(--light-color); */
 }
 #intro h1{
     font-size: 50px;
@@ -2832,7 +2825,6 @@ footer{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed !important;
     color: var(--light-color);
 }
 footer .footer-main {
@@ -2863,7 +2855,7 @@ footer h4{
     font-size: 18px;
 }
 footer .footer-about p{
-    font-size: 16px;
+    font-size: 14px;
 }
 footer p span{
     font-weight: 800;
@@ -3208,7 +3200,10 @@ footer h6 .i2{
     #categories .card i{
         color: var(--light-color);
     }
-
+    #intro{
+        background-attachment: initial !important;
+    }
+    
     #profile_dashboard  img{
         width: 100px;
         height: 100px;
@@ -3369,11 +3364,8 @@ footer h6 .i2{
         position: absolute;
         left: 85%;
     }
-    footer .footer-about p{
-        font-size: 14px;
-    }
-    #message-page .chat-header-2 .video_cam {
-        display: none;
+    #message-page .chat .card .chat-header-2 .video_cam {
+        display: none !important;
     }
 }
 @media only screen and (max-width: 530px){
@@ -3422,6 +3414,9 @@ footer h6 .i2{
     #message-page .chat .chat-header-2 .video_cam .video{
         margin-right: 8px;
     }
+    #message-page .chat .card .chat-header-2 .video_cam {
+        display: none !important;
+    }
 
 }
 @media only screen and (max-width: 500px){
@@ -3431,7 +3426,7 @@ footer h6 .i2{
         justify-content: space-between;
     }
     footer .footer-inner .linked h6 a {
-        font-size: 12px;
+        font-size: 11px;
     }
     footer .footer-inner .linked h6 {
         font-size: 12px;
@@ -3539,6 +3534,9 @@ footer h6 .i2{
     }
     #message-page .chat .chat-header-2 .video_cam .video{
         margin-right: 6px;
+    }
+    #message-page .chat .card .chat-header-2 .video_cam {
+        display: none !important;
     }
 }
 @media only screen and (max-width: 350px){
@@ -3655,6 +3653,9 @@ footer h6 .i2{
     #message-page .chat-contact .contacts_body .contacts-main .off{
         font-size: 10px;
     }
+    #message-page .chat .card .chat-header-2 .video_cam {
+        display: none !important;
+    }
     
 }
 @media only screen and (max-width: 320px){
@@ -3742,6 +3743,9 @@ footer h6 .i2{
         font-size: 13px !important;
         color: var(--light-color);
         text-decoration: none;
+    }
+    #message-page .chat .card .chat-header-2 .video_cam {
+        display: none !important;
     }
 }
 
