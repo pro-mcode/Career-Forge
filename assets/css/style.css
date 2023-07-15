@@ -29,7 +29,6 @@ body button{
 }
 nav{
     background:  var(--light-color);
-    /* background-color: #0072b1 !important; */
     max-height: fit-content;
     padding: 35px !important;
     width: 100%;
@@ -917,6 +916,8 @@ form .form button:hover {
     padding: 30px 30px;
     border-radius: 6px;
     display: none;
+    width: 95%;
+    margin: 0 auto;
 }
 #jobs .others{
     background-color: var(--light-color);
@@ -1479,11 +1480,12 @@ form .form-control:focus{
     font-size: 20px;
 }
 #profile-employee-page  .insta{
-    justify-content: baseline;
+    /* justify-content: center; */
+    align-items: center;
     display: flex;
 }
 #profile-employee-page  .inst{
-    height: 10px;
+    height: 20px;
 }
 #profile-employee-page .twitter{
     color: #1DA1F2;
@@ -1651,10 +1653,10 @@ input[value^="https://www.linkedin.com/"] {
 #message-page .chat .chat-header .user_info .user_name{
     font-size: 16px;
     color: white;
-    white-space: nowrap ;
+    /* white-space: nowrap ;
     overflow-x: hidden ;
     text-overflow: ellipsis ;
-    max-width: 10ch ;
+    max-width: 10ch ; */
 }
 #message-page .chat .chat-header-2{
     display: flex;
@@ -2355,7 +2357,7 @@ input[value^="https://www.linkedin.com/"] {
 /* profile_dashboard styling */
 #profile_dashboard{
     background-color: rgba(176, 196, 222, .2);
-    padding: 70px 10px;
+    padding: 50px 10px;
 }
 #profile_dashboard .profile_dashboards{
     background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/image/company.jpeg);
@@ -2832,7 +2834,7 @@ footer .footer-inner {
     justify-content: space-between;
 }
 footer h6{
-    font-size: 14px;
+    font-size: 12px;
     color: var(--main-color);
 }
 footer h2{
@@ -3056,7 +3058,7 @@ footer h6 .i2{
         width: 50%;
         height: 80px;
         background: rgba(176, 196, 222, 0.8);
-        top: 80px;
+        top: 70px;
         left: -100%;
         border-bottom-right-radius: 100%;
         transition: all .5s ease-in;
@@ -3213,6 +3215,9 @@ footer h6 .i2{
     }
 }
 @media only screen and (max-width: 680px) {
+    nav .dropdown-out {
+        left: 85%;
+    }
     #about-page .abouts-info {
         display: grid;
     }
@@ -3347,6 +3352,9 @@ footer h6 .i2{
 
 }
 @media only screen and (max-width: 450px){
+    #profile_dashboard img{
+        left: 20%;
+    }
     form .form input{
         width: 250px;
       }
@@ -3376,7 +3384,14 @@ footer h6 .i2{
         margin-top: 10px;
     }
 }
+/* @media only screen and (max-width:375) {
+
+    
+} */
 @media only screen and (max-width: 370px) {
+    #profile_dashboard img{
+        left: 20%;
+    }
     nav .nav-lists{
         width: 70%;
     }
@@ -3439,7 +3454,7 @@ footer h6 .i2{
     nav .nav-logo .logo a{
         font-size: 20px;
     }
-    nav .dropdown{
+    nav .dropdown-out{
         left: 78%;
     }
     .checkbtn{
@@ -3530,6 +3545,9 @@ footer h6 .i2{
     
 }
 @media only screen and (max-width: 320px){
+    #profile_dashboard img{
+        left: 30% !important;
+    }
     #message-page .chat .chat-header .img_cont .online_icon{
         top: 50%;
         left: 55%;
